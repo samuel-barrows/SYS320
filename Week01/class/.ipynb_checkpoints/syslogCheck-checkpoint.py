@@ -1,5 +1,6 @@
 # create and interface to search through syslog files
 import re
+import sys
 
 def _syslog(filename,keywords):
     
@@ -23,7 +24,7 @@ def _syslog(filename,keywords):
                 
     if len(results) == 0:
         print("no results")
-        sys.exit(1)
+        exit(1)
                 
     results = sorted(results)
 

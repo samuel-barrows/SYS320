@@ -24,7 +24,7 @@ def _syslog(filename,keywords):
                 
     if len(results) == 0:
         print("no results")
-        exit(1)
+        sys.exit(1)
                 
     results = sorted(results)
 
