@@ -1,6 +1,5 @@
 # A collection of functions that, when put together, scan a directory of
 # web logs for proof of specified attacks
-from ast import UAdd
 import os, yaml, re
 
 def traverse(dir):

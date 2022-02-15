@@ -22,8 +22,8 @@ book = args.scanfor
 
 fList = traverse(rootdir)
 # Track stats
-sA = 0
-uA = 0
+sA = []
+uA = []
 
 for eachFile in fList:
     results = (log_scan(eachFile, searchterms, book))
@@ -33,13 +33,20 @@ for eachFile in fList:
         # Unsuccessful Attacks (uA)
         stat = stats(x)
         if stat == 0:
-            sA = sA + 1
+            sA.append(x)
         elif stat == 1:
-            uA = uA + 1
+            uA.append(x)
 
 print("""
     {}\n
     {}
     {}
-""".format("*"*27 + "STATS" + "*"*28, "Successful: {}".format(sA), "Unsuccessful: {}".format(uA)))
+""".format("*"*27 + "STATS" + "*"*28, 
+           "Successful: {}".format(len(sA)), 
+           "Unsuccessful: {}".format(len(uA))
+          )
+    )
+print("Successful logs: ")
+for x in sA:
+    print(x)
 
