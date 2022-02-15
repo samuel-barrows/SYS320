@@ -1,5 +1,6 @@
 # A collection of functions that, when put together, scan a directory of
 # web logs for proof of specified attacks
+from ast import UAdd
 import os, yaml, re
 
 def traverse(dir):
@@ -74,3 +75,11 @@ def fmtResults(string):
     Source IP: {}\n
     {}
     """.format(sR[3].strip("["),sR[4].strip("]"), sR[6], sR[8], sR[9], sR[0], "*"*60).strip("\n"))
+
+def stats(string):
+    """Count possible unsuccessful/successful attacks"""
+    sR = string.split(" ")
+    if int(sR[8]) == 200 and int(sR[9]) > 0:
+        return 0
+    else:
+        return 1

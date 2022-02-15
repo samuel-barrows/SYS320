@@ -1,5 +1,5 @@
 import argparse 
-from fs2 import yamlParse, traverse, log_scan, fmtResults
+from fs2 import yamlParse, traverse, log_scan, fmtResults, stats
 
 parser = argparse.ArgumentParser(
     description="Traverses directory and scans log files for web attacks",
@@ -21,7 +21,25 @@ rootdir = args.directory
 book = args.scanfor
 
 fList = traverse(rootdir)
+# Track stats
+sA = 0
+uA = 0
+
 for eachFile in fList:
-    results = log_scan(eachFile, searchterms, book)
+    results = (log_scan(eachFile, searchterms, book))
     for x in results:
         fmtResults(x)
+        # Keep track of Successful Attacks (sA) and
+        # Unsuccessful Attacks (uA)
+        stat = stats(x)
+        if stat == 0:
+            sA = sA + 1
+        elif stat == 1:
+            uA = uA + 1
+
+print("""
+    {}\n
+    {}
+    {}
+""".format("*"*27 + "STATS" + "*"*28, "Successful: {}".format(sA), "Unsuccessful: {}".format(uA)))
+
