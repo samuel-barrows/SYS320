@@ -1,0 +1,56 @@
+* Discussion
+** Prelude
+  In addition to the work I did for the homework, I added a stats
+  module to ~fs.py~ that looks like the following:
+
+  #+BEGIN_SRC python
+  def stats(string):
+    """Count possible unsuccessful/successful attacks"""
+    sR = string.split(" ")
+    if int(sR[8]) == 200 and int(sR[9]) > 5000:
+        return 0
+    else:
+        return 1 
+  #+END_SRC
+
+  To actually use it, you do something like this:
+
+  #+BEGIN_SRC python
+    sA = 0 
+    uA = 0
+    for eachFile in fList:
+	for x in results:
+	    # Keep track of Successful Attacks (sA) and
+	    # Unsuccessful Attacks (uA)
+	    stat = stats(x)
+	    if stat == 0:
+		sA = sA + 1
+	    elif stat == 1:
+		uA = uA + 1
+  #+END_SRC
+
+  This will count every log that returns a status code of '200' and
+  has a bytes returned of greater than 5000. If run properly, then
+  this query will only be run on URI's related to possible web shells.
+** 1.
+  Based on this, only the shell_attacks book returned any seemingly
+  successful attacks. A total of 5 successful shell related attacks
+  were picked up by my script, all happening within the time frame of
+  12:45:49 - 12:48:10. These attacks also came from the same IP of
+  ~88.93.4.27~. This is definetly something to be concerned about.
+
+
+** 2.
+   I liked this assignment a lot because it pushed me to create some
+   real modular modules and use them. I copied and improved some older
+   stuff for use in this assignment. I made them more modular and was
+   able to complete the assignment well.
+
+   I didn't have any gripes with this assigment. I was a little
+   confused how this related to the classwork, but I was focused on
+   the body file part. Once I realized we were going to be working
+   with log files rather than doing what we did in class it made a lot
+   more sense. It was also 5:30AM when I was starting this assignment.
+
+   No real questions except if I did my stat function correctly or if
+   you would approach it any different. The real source and use are here:
