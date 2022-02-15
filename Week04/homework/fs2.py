@@ -79,7 +79,7 @@ def fmtResults(string):
 def stats(string):
     """Count possible unsuccessful/successful attacks"""
     sR = string.split(" ")
-    if int(sR[8]) == 200 and int(sR[9]) > 0:
+    if int(sR[8]) == 200 and int(sR[9]) > 5000:
         return 0
     else:
         return 1
