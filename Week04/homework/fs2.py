@@ -36,8 +36,8 @@ def log_scan(filename, searchterms, book):
     """scan a log file and search for the search term"""
     """improved 'syslogCheck' from week2"""
 
-    # Query yaml file for the 'term' or 'service
-    # retrieve the strings to search on
+    # Query yaml file for the terms in each yaml book
+    # to retrieve the strings to search on
     #terms = keywords[book]
     terms = searchterms[book]
 
