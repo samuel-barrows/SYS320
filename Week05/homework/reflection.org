@@ -1,0 +1,50 @@
+* Discussion
+** Picked Logs
+1. Credential Collection:
+
+   Most of the logs that match the registry key mentioned in the
+   assignment all query for the Security Packages with a number of
+   different dll files. This particular key is related to the Local
+   Security Authority or LSA. What is most likely going on is that a
+   bad actor could be loading these bad dll files in an attempt to
+   gain access to credentials. More information would be needed here
+   to determine if that was gained or not.
+
+2. Process running Javascript
+
+   MSHTA is something that I've seen and known about before, but
+   didn't know the specifics of what it could be used
+   maliciously. MSHTA, in this case, is being used to execute remote
+   scripts as it is MSHTA that is processing said scripts. It's super
+   interesting how this works and is something I would now like to try
+   and implement in either SIEM alerts or in some red team projects
+   that I'm working on currently.
+
+3. Powershell Executions
+
+   I believe that something might be off with my search queries,
+   specifically for "iex", but I didn't recieve many good results from
+   my powershell queries. It seems that it is only some internet
+   explorer stuff (iex) and just powershell being launched or running
+   the "Get-Date" commandlet. I don't know if it's something I did
+   wrong, if the searches could just be more specific, or if there
+   just weren't any good examples of this type of attack in these logs.
+
+** Most/Least Opinion
+   I felt a little conflicted with this assignment. On one hand, I
+   enjoy these topics as well as the general log analysis
+   assignments. But I felt a little confused as to what I was supposed
+   to be doing initially. Maybe it was just because there was no video
+   or because this wasn't based on any class work, but it just felt a
+   little hard to start. However, when I did started, I was able to
+   use pretty much all my code from last week to build this
+   implimentation. I like how modular my code was, so that it only
+   needed a little modification, but I also felt like I didn't do much
+   this week. I feel like I'm missing something or that this week
+   didn't introduce much for new material. I'm not sure specifically.
+
+** Questions
+
+   I just want to make sure my regular expression queries are correct
+   and that I'm not missing anything. I think I did this assingment
+   pretty well, but I am not sure. Thank you Duane.
