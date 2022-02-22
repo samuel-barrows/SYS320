@@ -53,4 +53,4 @@
    more sense. It was also 5:30AM when I was starting this assignment.
 
    No real questions except if I did my stat function correctly or if
-   you would approach it any different. The real source and use are here:
+   you would approach it any different. The real source and use are here [[https://github.com/samuel-barrows/SYS320/blob/master/Week04/homework/fs2.py#L78]] and here [[https://github.com/samuel-barrows/SYS320/blob/master/Week04/homework/homework.py#L28]]. 
