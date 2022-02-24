@@ -1,0 +1,462 @@
+### BEGIN ps -ef ###
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Feb22 ?        00:00:03 /sbin/init
+root         2     0  0 Feb22 ?        00:00:00 [kthreadd]
+root         3     2  0 Feb22 ?        00:00:00 [rcu_gp]
+root         4     2  0 Feb22 ?        00:00:00 [rcu_par_gp]
+root         6     2  0 Feb22 ?        00:00:00 [kworker/0:0H-kblockd]
+root         7     2  0 Feb22 ?        00:00:00 [kworker/u4:0-flush-8:0]
+root         8     2  0 Feb22 ?        00:00:00 [mm_percpu_wq]
+root         9     2  0 Feb22 ?        00:00:00 [ksoftirqd/0]
+root        10     2  0 Feb22 ?        00:00:05 [rcu_sched]
+root        11     2  0 Feb22 ?        00:00:00 [rcu_bh]
+root        12     2  0 Feb22 ?        00:00:00 [migration/0]
+root        14     2  0 Feb22 ?        00:00:00 [cpuhp/0]
+root        15     2  0 Feb22 ?        00:00:00 [cpuhp/1]
+root        16     2  0 Feb22 ?        00:00:00 [migration/1]
+root        17     2  0 Feb22 ?        00:00:00 [ksoftirqd/1]
+root        19     2  0 Feb22 ?        00:00:00 [kworker/1:0H-kblockd]
+root        20     2  0 Feb22 ?        00:00:00 [kdevtmpfs]
+root        21     2  0 Feb22 ?        00:00:00 [netns]
+root        22     2  0 Feb22 ?        00:00:00 [kauditd]
+root        23     2  0 Feb22 ?        00:00:00 [khungtaskd]
+root        24     2  0 Feb22 ?        00:00:00 [oom_reaper]
+root        25     2  0 Feb22 ?        00:00:00 [writeback]
+root        26     2  0 Feb22 ?        00:00:00 [kcompactd0]
+root        27     2  0 Feb22 ?        00:00:00 [ksmd]
+root        28     2  0 Feb22 ?        00:00:00 [khugepaged]
+root        29     2  0 Feb22 ?        00:00:00 [crypto]
+root        30     2  0 Feb22 ?        00:00:00 [kintegrityd]
+root        31     2  0 Feb22 ?        00:00:00 [kblockd]
+root        32     2  0 Feb22 ?        00:00:00 [edac-poller]
+root        33     2  0 Feb22 ?        00:00:00 [devfreq_wq]
+root        34     2  0 Feb22 ?        00:00:00 [watchdogd]
+root        36     2  0 Feb22 ?        00:00:00 [kswapd0]
+root        54     2  0 Feb22 ?        00:00:00 [kthrotld]
+root        55     2  0 Feb22 ?        00:00:00 [ipv6_addrconf]
+root        65     2  0 Feb22 ?        00:00:00 [kstrp]
+root       114     2  0 Feb22 ?        00:00:00 [ata_sff]
+root       115     2  0 Feb22 ?        00:00:00 [scsi_eh_0]
+root       116     2  0 Feb22 ?        00:00:00 [scsi_tmf_0]
+root       117     2  0 Feb22 ?        00:00:00 [scsi_eh_1]
+root       118     2  0 Feb22 ?        00:00:00 [scsi_tmf_1]
+root       121     2  0 Feb22 ?        00:00:00 [scsi_eh_2]
+root       122     2  0 Feb22 ?        00:00:00 [scsi_tmf_2]
+root       124     2  0 Feb22 ?        00:00:00 [kworker/0:1H-kblockd]
+root       127     2  0 Feb22 ?        00:00:00 [kworker/1:1H-kblockd]
+root       158     2  0 Feb22 ?        00:00:00 [kworker/u5:0]
+root       160     2  0 Feb22 ?        00:00:00 [jbd2/sda1-8]
+root       161     2  0 Feb22 ?        00:00:00 [ext4-rsv-conver]
+root       191     1  0 Feb22 ?        00:00:01 /lib/systemd/systemd-journald
+root       211     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-udevd
+root       254     2  0 Feb22 ?        00:00:00 [ttm_swap]
+root       313     2  0 Feb22 ?        00:00:00 [jbd2/sda6-8]
+root       314     2  0 Feb22 ?        00:00:00 [ext4-rsv-conver]
+systemd+   324     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root       345     1  0 Feb22 ?        00:00:00 /sbin/dhclient -4 -v -i -pf /run/dhclient.ens18.pid -lf /var/lib/dhcp/dhclient.ens18.leases -I -df /var/lib/dhcp/dhclient6.ens18.leases ens18
+message+   350     1  0 Feb22 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       352     1  0 Feb22 ?        00:00:00 /usr/sbin/cron -f
+root       353     1  0 Feb22 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root       354     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-logind
+root       390     1  0 Feb22 tty1     00:00:00 /bin/login -p --
+root       405     1  0 Feb22 ?        00:00:00 /usr/sbin/sshd -D
+mysql      460     1  0 Feb22 ?        00:00:49 /usr/sbin/mysqld
+root       461     1  0 Feb22 ?        00:00:04 /usr/sbin/apache2 -k start
+Debian-+   809     1  0 Feb22 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
+root      3367     2  0 Feb23 ?        00:00:00 [kworker/1:2-mm_percpu_wq]
+www-data  4684   461  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data  4685   461  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+root      4877     2  0 01:05 ?        00:00:03 [kworker/0:2-events_power_efficient]
+root      5424     2  0 05:12 ?        00:00:00 [kworker/u4:2]
+sam-adm   5430     1  0 05:12 ?        00:00:00 /lib/systemd/systemd --user
+sam-adm   5431  5430  0 05:12 ?        00:00:00 (sd-pam)
+sam-adm   5441   390  0 05:12 tty1     00:00:00 -bash
+root      5447     2  0 05:14 ?        00:00:00 [kworker/1:0]
+root      5448   405  0 05:15 ?        00:00:00 sshd: sam-adm [priv]
+sam-adm   5454  5448  0 05:15 ?        00:00:00 sshd: sam-adm
+root      5457   405  0 05:16 ?        00:00:00 sshd: sam-adm [priv]
+sam-adm   5463  5457  0 05:16 ?        00:00:00 sshd: sam-adm@notty
+root      5482     2  0 05:28 ?        00:00:00 [kworker/0:1-ata_sff]
+root      5488   405  0 05:32 ?        00:00:00 sshd: sam-adm [priv]
+sam-adm   5494  5488  0 05:32 ?        00:00:00 sshd: sam-adm@notty
+root      5504     2  0 05:33 ?        00:00:00 [kworker/0:0-ata_sff]
+sam-adm   5505  5494  0 05:33 ?        00:00:00 ps -ef
+### END ps -ef ###
+
+### BEGIN netstat -an ###
+
+### END netstat -an ###
+
+### BEGIN last -adx ###
+
+sam-adm  tty1         Thu Feb 24 05:12   still logged in    zero.champlain.edu
+runlevel (to lvl 5)   Tue Feb 22 17:33   still running      zero.champlain.edu
+reboot   system boot  Tue Feb 22 17:33   still running      zero.champlain.edu
+runlevel (to lvl 5)   Sat Jan  8 16:35 - 17:33 (45+00:58)   zero.champlain.edu
+reboot   system boot  Sat Jan  8 16:35   still running      zero.champlain.edu
+sam-adm  tty1         Wed Oct  6 17:03 - 09:46 (44+17:42)   zero.champlain.edu
+runlevel (to lvl 5)   Tue Oct  5 14:05 - 16:35 (95+03:29)   zero.champlain.edu
+reboot   system boot  Tue Oct  5 14:05   still running      zero.champlain.edu
+runlevel (to lvl 5)   Fri Sep 10 16:12 - 14:05 (24+21:53)   zero.champlain.edu
+reboot   system boot  Fri Sep 10 16:11   still running      zero.champlain.edu
+shutdown system down  Fri Sep 10 14:48 - 16:11  (01:23)     zero.champlain.edu
+runlevel (to lvl 5)   Fri Sep 10 14:47 - 14:48  (00:00)     zero.champlain.edu
+reboot   system boot  Fri Sep 10 14:47 - 14:48  (00:00)     zero.champlain.edu
+shutdown system down  Fri Sep 10 14:50 - 14:47  (-00:02)    zero.champlain.edu
+runlevel (to lvl 5)   Fri Aug 20 16:01 - 14:50 (20+22:48)   zero.champlain.edu
+reboot   system boot  Fri Aug 20 16:01 - 14:50 (20+22:48)   zero.champlain.edu
+shutdown system down  Fri Aug 20 15:45 - 16:01  (00:16)     zero.champlain.edu
+runlevel (to lvl 5)   Fri Aug 20 15:35 - 15:45  (00:09)     zero.champlain.edu
+reboot   system boot  Fri Aug 20 15:35 - 15:45  (00:09)     zero.champlain.edu
+runlevel (to lvl 5)   Thu Aug 12 00:00 - 15:35 (8+15:35)    zero.champlain.edu
+reboot   system boot  Thu Aug 12 00:00 - 15:45 (8+15:45)    zero.champlain.edu
+runlevel (to lvl 5)   Mon Jul 12 07:24 - 00:00 (30+16:35)   zero.champlain.edu
+reboot   system boot  Mon Jul 12 07:24 - 15:45 (39+08:20)   zero.champlain.edu
+runlevel (to lvl 5)   Sat Jun  5 10:09 - 07:24 (36+21:14)   zero.champlain.edu
+reboot   system boot  Sat Jun  5 10:09 - 15:45 (76+05:35)   zero.champlain.edu
+runlevel (to lvl 5)   Sun May  9 07:22 - 10:09 (27+02:47)   zero.champlain.edu
+reboot   system boot  Sun May  9 07:22 - 15:45 (103+08:23)  zero.champlain.edu
+shutdown system down  Sat Apr  3 08:46 - 07:22 (35+22:35)   zero.champlain.edu
+runlevel (to lvl 5)   Fri Apr  2 08:51 - 08:46  (23:54)     zero.champlain.edu
+reboot   system boot  Fri Apr  2 08:51 - 08:46  (23:54)     zero.champlain.edu
+sam-adm  pts/1        Thu Mar 25 08:36 - 09:51 (1+01:15)    192.168.1.3
+sam-adm  pts/0        Thu Mar 25 08:16 - 09:52 (1+01:35)    192.168.1.3
+sam-adm  pts/0        Thu Mar 25 08:16 - 08:16  (00:00)     192.168.1.3
+runlevel (to lvl 5)   Thu Mar 25 08:16 - 08:51 (8+00:35)    zero.champlain.edu
+reboot   system boot  Thu Mar 25 08:16 - 08:46 (9+00:29)    zero.champlain.edu
+sam-adm  pts/0        Thu Mar 25 04:58 - 05:27  (00:28)     192.168.1.3
+runlevel (to lvl 5)   Mon Mar 15 17:46 - 08:16 (9+14:29)    zero.champlain.edu
+reboot   system boot  Mon Mar 15 17:46 - 08:46 (18+14:59)   zero.champlain.edu
+shutdown system down  Mon Mar 15 17:45 - 17:46  (00:01)     zero.champlain.edu
+runlevel (to lvl 5)   Mon Mar 15 17:01 - 17:45  (00:44)     zero.champlain.edu
+reboot   system boot  Mon Mar 15 17:01 - 17:45  (00:44)     zero.champlain.edu
+runlevel (to lvl 5)   Sun Feb 21 10:45 - 17:01 (22+05:16)   zero.champlain.edu
+reboot   system boot  Sun Feb 21 10:44 - 17:45 (22+06:00)   zero.champlain.edu
+runlevel (to lvl 5)   Thu Feb 18 08:26 - 10:45 (3+02:18)    zero.champlain.edu
+reboot   system boot  Thu Feb 18 08:25 - 17:45 (25+08:19)   zero.champlain.edu
+shutdown system down  Thu Feb 18 08:15 - 08:25  (00:10)     zero.champlain.edu
+sam-adm  pts/0        Mon Feb  1 05:52 - 09:59  (04:06)     192.168.1.3
+sam-adm  pts/0        Mon Feb  1 05:43 - 05:50  (00:06)     192.168.1.3
+sam-adm  tty1         Mon Feb  1 05:27 - down  (17+02:47)   zero.champlain.edu
+runlevel (to lvl 5)   Mon Feb  1 05:27 - 08:15 (17+02:48)   zero.champlain.edu
+reboot   system boot  Mon Feb  1 05:26 - 08:15 (17+02:48)   zero.champlain.edu
+shutdown system down  Mon Feb  1 05:25 - 05:26  (00:01)     zero.champlain.edu
+sam-adm  pts/0        Sun Jan 31 12:19 - 22:52  (10:33)     192.168.1.3
+sam-adm  pts/0        Sun Jan 31 07:32 - 07:48  (00:15)     192.168.1.3
+sam-adm  tty1         Thu Jan 28 15:24 - down  (3+14:00)    zero.champlain.edu
+sam-adm  tty1         Thu Jan 28 14:25 - 14:26  (00:00)     zero.champlain.edu
+sam-adm  tty1         Thu Jan 28 11:18 - 11:18  (00:00)     zero.champlain.edu
+root     tty1         Thu Jan 28 11:12 - 11:18  (00:05)     zero.champlain.edu
+sam-adm  tty1         Thu Jan 28 11:12 - 11:12  (00:00)     zero.champlain.edu
+runlevel (to lvl 5)   Thu Jan 28 11:12 - 05:25 (3+18:13)    zero.champlain.edu
+reboot   system boot  Thu Jan 28 11:11 - 05:25 (3+18:13)    zero.champlain.edu
+
+wtmp begins Thu Jan 28 11:11:49 2021
+### END last -adx ###
+
+### BEGIN cut -d ':' -f1 /etc/passwd ###
+
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+gnats
+nobody
+_apt
+systemd-timesync
+systemd-network
+systemd-resolve
+messagebus
+sshd
+sam-adm
+systemd-coredump
+Debian-exim
+mysql
+searx
+filtron
+### END cut -d ':' -f1 /etc/passwd ###
+
+### BEGIN ps -ef ###
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Feb22 ?        00:00:03 /sbin/init
+root         2     0  0 Feb22 ?        00:00:00 [kthreadd]
+root         3     2  0 Feb22 ?        00:00:00 [rcu_gp]
+root         4     2  0 Feb22 ?        00:00:00 [rcu_par_gp]
+root         6     2  0 Feb22 ?        00:00:00 [kworker/0:0H-kblockd]
+root         7     2  0 Feb22 ?        00:00:00 [kworker/u4:0-flush-8:0]
+root         8     2  0 Feb22 ?        00:00:00 [mm_percpu_wq]
+root         9     2  0 Feb22 ?        00:00:00 [ksoftirqd/0]
+root        10     2  0 Feb22 ?        00:00:05 [rcu_sched]
+root        11     2  0 Feb22 ?        00:00:00 [rcu_bh]
+root        12     2  0 Feb22 ?        00:00:00 [migration/0]
+root        14     2  0 Feb22 ?        00:00:00 [cpuhp/0]
+root        15     2  0 Feb22 ?        00:00:00 [cpuhp/1]
+root        16     2  0 Feb22 ?        00:00:00 [migration/1]
+root        17     2  0 Feb22 ?        00:00:00 [ksoftirqd/1]
+root        19     2  0 Feb22 ?        00:00:00 [kworker/1:0H-kblockd]
+root        20     2  0 Feb22 ?        00:00:00 [kdevtmpfs]
+root        21     2  0 Feb22 ?        00:00:00 [netns]
+root        22     2  0 Feb22 ?        00:00:00 [kauditd]
+root        23     2  0 Feb22 ?        00:00:00 [khungtaskd]
+root        24     2  0 Feb22 ?        00:00:00 [oom_reaper]
+root        25     2  0 Feb22 ?        00:00:00 [writeback]
+root        26     2  0 Feb22 ?        00:00:00 [kcompactd0]
+root        27     2  0 Feb22 ?        00:00:00 [ksmd]
+root        28     2  0 Feb22 ?        00:00:00 [khugepaged]
+root        29     2  0 Feb22 ?        00:00:00 [crypto]
+root        30     2  0 Feb22 ?        00:00:00 [kintegrityd]
+root        31     2  0 Feb22 ?        00:00:00 [kblockd]
+root        32     2  0 Feb22 ?        00:00:00 [edac-poller]
+root        33     2  0 Feb22 ?        00:00:00 [devfreq_wq]
+root        34     2  0 Feb22 ?        00:00:00 [watchdogd]
+root        36     2  0 Feb22 ?        00:00:00 [kswapd0]
+root        54     2  0 Feb22 ?        00:00:00 [kthrotld]
+root        55     2  0 Feb22 ?        00:00:00 [ipv6_addrconf]
+root        65     2  0 Feb22 ?        00:00:00 [kstrp]
+root       114     2  0 Feb22 ?        00:00:00 [ata_sff]
+root       115     2  0 Feb22 ?        00:00:00 [scsi_eh_0]
+root       116     2  0 Feb22 ?        00:00:00 [scsi_tmf_0]
+root       117     2  0 Feb22 ?        00:00:00 [scsi_eh_1]
+root       118     2  0 Feb22 ?        00:00:00 [scsi_tmf_1]
+root       121     2  0 Feb22 ?        00:00:00 [scsi_eh_2]
+root       122     2  0 Feb22 ?        00:00:00 [scsi_tmf_2]
+root       124     2  0 Feb22 ?        00:00:00 [kworker/0:1H-kblockd]
+root       127     2  0 Feb22 ?        00:00:00 [kworker/1:1H-kblockd]
+root       158     2  0 Feb22 ?        00:00:00 [kworker/u5:0]
+root       160     2  0 Feb22 ?        00:00:00 [jbd2/sda1-8]
+root       161     2  0 Feb22 ?        00:00:00 [ext4-rsv-conver]
+root       191     1  0 Feb22 ?        00:00:01 /lib/systemd/systemd-journald
+root       211     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-udevd
+root       254     2  0 Feb22 ?        00:00:00 [ttm_swap]
+root       313     2  0 Feb22 ?        00:00:00 [jbd2/sda6-8]
+root       314     2  0 Feb22 ?        00:00:00 [ext4-rsv-conver]
+systemd+   324     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root       345     1  0 Feb22 ?        00:00:00 /sbin/dhclient -4 -v -i -pf /run/dhclient.ens18.pid -lf /var/lib/dhcp/dhclient.ens18.leases -I -df /var/lib/dhcp/dhclient6.ens18.leases ens18
+message+   350     1  0 Feb22 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       352     1  0 Feb22 ?        00:00:00 /usr/sbin/cron -f
+root       353     1  0 Feb22 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root       354     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-logind
+root       390     1  0 Feb22 tty1     00:00:00 /bin/login -p --
+root       405     1  0 Feb22 ?        00:00:00 /usr/sbin/sshd -D
+mysql      460     1  0 Feb22 ?        00:00:49 /usr/sbin/mysqld
+root       461     1  0 Feb22 ?        00:00:04 /usr/sbin/apache2 -k start
+Debian-+   809     1  0 Feb22 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
+root      3367     2  0 Feb23 ?        00:00:00 [kworker/1:2-memcg_kmem_cache]
+www-data  4684   461  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data  4685   461  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+root      4877     2  0 01:05 ?        00:00:03 [kworker/0:2-events_freezable_power_]
+root      5424     2  0 05:12 ?        00:00:00 [kworker/u4:2]
+sam-adm   5430     1  0 05:12 ?        00:00:00 /lib/systemd/systemd --user
+sam-adm   5431  5430  0 05:12 ?        00:00:00 (sd-pam)
+sam-adm   5441   390  0 05:12 tty1     00:00:00 -bash
+root      5447     2  0 05:14 ?        00:00:00 [kworker/1:0-cgroup_destroy]
+root      5504     2  0 05:33 ?        00:00:00 [kworker/0:0-ata_sff]
+root      5509     2  0 05:38 ?        00:00:00 [kworker/0:1-ata_sff]
+root      5557     2  0 05:39 ?        00:00:00 [kworker/1:1-cgroup_destroy]
+root      5558   405  0 05:39 ?        00:00:00 sshd: sam-adm [priv]
+sam-adm   5564  5558  0 05:39 ?        00:00:00 sshd: sam-adm@notty
+sam-adm   5565  5564  0 05:39 ?        00:00:00 ps -ef
+### END ps -ef ###
+
+### BEGIN ps -ef ###
+
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Feb22 ?        00:00:03 /sbin/init
+root         2     0  0 Feb22 ?        00:00:00 [kthreadd]
+root         3     2  0 Feb22 ?        00:00:00 [rcu_gp]
+root         4     2  0 Feb22 ?        00:00:00 [rcu_par_gp]
+root         6     2  0 Feb22 ?        00:00:00 [kworker/0:0H-kblockd]
+root         7     2  0 Feb22 ?        00:00:00 [kworker/u4:0-flush-8:0]
+root         8     2  0 Feb22 ?        00:00:00 [mm_percpu_wq]
+root         9     2  0 Feb22 ?        00:00:00 [ksoftirqd/0]
+root        10     2  0 Feb22 ?        00:00:05 [rcu_sched]
+root        11     2  0 Feb22 ?        00:00:00 [rcu_bh]
+root        12     2  0 Feb22 ?        00:00:00 [migration/0]
+root        14     2  0 Feb22 ?        00:00:00 [cpuhp/0]
+root        15     2  0 Feb22 ?        00:00:00 [cpuhp/1]
+root        16     2  0 Feb22 ?        00:00:00 [migration/1]
+root        17     2  0 Feb22 ?        00:00:00 [ksoftirqd/1]
+root        19     2  0 Feb22 ?        00:00:00 [kworker/1:0H-kblockd]
+root        20     2  0 Feb22 ?        00:00:00 [kdevtmpfs]
+root        21     2  0 Feb22 ?        00:00:00 [netns]
+root        22     2  0 Feb22 ?        00:00:00 [kauditd]
+root        23     2  0 Feb22 ?        00:00:00 [khungtaskd]
+root        24     2  0 Feb22 ?        00:00:00 [oom_reaper]
+root        25     2  0 Feb22 ?        00:00:00 [writeback]
+root        26     2  0 Feb22 ?        00:00:00 [kcompactd0]
+root        27     2  0 Feb22 ?        00:00:00 [ksmd]
+root        28     2  0 Feb22 ?        00:00:00 [khugepaged]
+root        29     2  0 Feb22 ?        00:00:00 [crypto]
+root        30     2  0 Feb22 ?        00:00:00 [kintegrityd]
+root        31     2  0 Feb22 ?        00:00:00 [kblockd]
+root        32     2  0 Feb22 ?        00:00:00 [edac-poller]
+root        33     2  0 Feb22 ?        00:00:00 [devfreq_wq]
+root        34     2  0 Feb22 ?        00:00:00 [watchdogd]
+root        36     2  0 Feb22 ?        00:00:00 [kswapd0]
+root        54     2  0 Feb22 ?        00:00:00 [kthrotld]
+root        55     2  0 Feb22 ?        00:00:00 [ipv6_addrconf]
+root        65     2  0 Feb22 ?        00:00:00 [kstrp]
+root       114     2  0 Feb22 ?        00:00:00 [ata_sff]
+root       115     2  0 Feb22 ?        00:00:00 [scsi_eh_0]
+root       116     2  0 Feb22 ?        00:00:00 [scsi_tmf_0]
+root       117     2  0 Feb22 ?        00:00:00 [scsi_eh_1]
+root       118     2  0 Feb22 ?        00:00:00 [scsi_tmf_1]
+root       121     2  0 Feb22 ?        00:00:00 [scsi_eh_2]
+root       122     2  0 Feb22 ?        00:00:00 [scsi_tmf_2]
+root       124     2  0 Feb22 ?        00:00:00 [kworker/0:1H-kblockd]
+root       127     2  0 Feb22 ?        00:00:00 [kworker/1:1H-kblockd]
+root       158     2  0 Feb22 ?        00:00:00 [kworker/u5:0]
+root       160     2  0 Feb22 ?        00:00:00 [jbd2/sda1-8]
+root       161     2  0 Feb22 ?        00:00:00 [ext4-rsv-conver]
+root       191     1  0 Feb22 ?        00:00:01 /lib/systemd/systemd-journald
+root       211     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-udevd
+root       254     2  0 Feb22 ?        00:00:00 [ttm_swap]
+root       313     2  0 Feb22 ?        00:00:00 [jbd2/sda6-8]
+root       314     2  0 Feb22 ?        00:00:00 [ext4-rsv-conver]
+systemd+   324     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-timesyncd
+root       345     1  0 Feb22 ?        00:00:00 /sbin/dhclient -4 -v -i -pf /run/dhclient.ens18.pid -lf /var/lib/dhcp/dhclient.ens18.leases -I -df /var/lib/dhcp/dhclient6.ens18.leases ens18
+message+   350     1  0 Feb22 ?        00:00:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+root       352     1  0 Feb22 ?        00:00:00 /usr/sbin/cron -f
+root       353     1  0 Feb22 ?        00:00:00 /usr/sbin/rsyslogd -n -iNONE
+root       354     1  0 Feb22 ?        00:00:00 /lib/systemd/systemd-logind
+root       390     1  0 Feb22 tty1     00:00:00 /bin/login -p --
+root       405     1  0 Feb22 ?        00:00:00 /usr/sbin/sshd -D
+mysql      460     1  0 Feb22 ?        00:00:49 /usr/sbin/mysqld
+root       461     1  0 Feb22 ?        00:00:04 /usr/sbin/apache2 -k start
+Debian-+   809     1  0 Feb22 ?        00:00:00 /usr/sbin/exim4 -bd -q30m
+root      3367     2  0 Feb23 ?        00:00:00 [kworker/1:2-memcg_kmem_cache]
+www-data  4684   461  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+www-data  4685   461  0 00:00 ?        00:00:00 /usr/sbin/apache2 -k start
+root      4877     2  0 01:05 ?        00:00:03 [kworker/0:2-events_freezable]
+root      5424     2  0 05:12 ?        00:00:00 [kworker/u4:2]
+sam-adm   5430     1  0 05:12 ?        00:00:00 /lib/systemd/systemd --user
+sam-adm   5431  5430  0 05:12 ?        00:00:00 (sd-pam)
+sam-adm   5441   390  0 05:12 tty1     00:00:00 -bash
+root      5447     2  0 05:14 ?        00:00:00 [kworker/1:0-cgroup_destroy]
+root      5504     2  0 05:33 ?        00:00:00 [kworker/0:0-ata_sff]
+root      5509     2  0 05:38 ?        00:00:00 [kworker/0:1-ata_sff]
+root      5557     2  0 05:39 ?        00:00:00 [kworker/1:1-cgroup_destroy]
+root      5566   405  1 05:39 ?        00:00:00 sshd: sam-adm [priv]
+sam-adm   5572  5566  0 05:39 ?        00:00:00 sshd: sam-adm@notty
+sam-adm   5573  5572  0 05:39 ?        00:00:00 ps -ef
+### END ps -ef ###
+
+### BEGIN netstat -an ###
+
+### END netstat -an ###
+
+### BEGIN last -adx ###
+
+sam-adm  tty1         Thu Feb 24 05:12   still logged in    zero.champlain.edu
+runlevel (to lvl 5)   Tue Feb 22 17:33   still running      zero.champlain.edu
+reboot   system boot  Tue Feb 22 17:33   still running      zero.champlain.edu
+runlevel (to lvl 5)   Sat Jan  8 16:35 - 17:33 (45+00:58)   zero.champlain.edu
+reboot   system boot  Sat Jan  8 16:35   still running      zero.champlain.edu
+sam-adm  tty1         Wed Oct  6 17:03 - 09:46 (44+17:42)   zero.champlain.edu
+runlevel (to lvl 5)   Tue Oct  5 14:05 - 16:35 (95+03:29)   zero.champlain.edu
+reboot   system boot  Tue Oct  5 14:05   still running      zero.champlain.edu
+runlevel (to lvl 5)   Fri Sep 10 16:12 - 14:05 (24+21:53)   zero.champlain.edu
+reboot   system boot  Fri Sep 10 16:11   still running      zero.champlain.edu
+shutdown system down  Fri Sep 10 14:48 - 16:11  (01:23)     zero.champlain.edu
+runlevel (to lvl 5)   Fri Sep 10 14:47 - 14:48  (00:00)     zero.champlain.edu
+reboot   system boot  Fri Sep 10 14:47 - 14:48  (00:00)     zero.champlain.edu
+shutdown system down  Fri Sep 10 14:50 - 14:47  (-00:02)    zero.champlain.edu
+runlevel (to lvl 5)   Fri Aug 20 16:01 - 14:50 (20+22:48)   zero.champlain.edu
+reboot   system boot  Fri Aug 20 16:01 - 14:50 (20+22:48)   zero.champlain.edu
+shutdown system down  Fri Aug 20 15:45 - 16:01  (00:16)     zero.champlain.edu
+runlevel (to lvl 5)   Fri Aug 20 15:35 - 15:45  (00:09)     zero.champlain.edu
+reboot   system boot  Fri Aug 20 15:35 - 15:45  (00:09)     zero.champlain.edu
+runlevel (to lvl 5)   Thu Aug 12 00:00 - 15:35 (8+15:35)    zero.champlain.edu
+reboot   system boot  Thu Aug 12 00:00 - 15:45 (8+15:45)    zero.champlain.edu
+runlevel (to lvl 5)   Mon Jul 12 07:24 - 00:00 (30+16:35)   zero.champlain.edu
+reboot   system boot  Mon Jul 12 07:24 - 15:45 (39+08:20)   zero.champlain.edu
+runlevel (to lvl 5)   Sat Jun  5 10:09 - 07:24 (36+21:14)   zero.champlain.edu
+reboot   system boot  Sat Jun  5 10:09 - 15:45 (76+05:35)   zero.champlain.edu
+runlevel (to lvl 5)   Sun May  9 07:22 - 10:09 (27+02:47)   zero.champlain.edu
+reboot   system boot  Sun May  9 07:22 - 15:45 (103+08:23)  zero.champlain.edu
+shutdown system down  Sat Apr  3 08:46 - 07:22 (35+22:35)   zero.champlain.edu
+runlevel (to lvl 5)   Fri Apr  2 08:51 - 08:46  (23:54)     zero.champlain.edu
+reboot   system boot  Fri Apr  2 08:51 - 08:46  (23:54)     zero.champlain.edu
+sam-adm  pts/1        Thu Mar 25 08:36 - 09:51 (1+01:15)    192.168.1.3
+sam-adm  pts/0        Thu Mar 25 08:16 - 09:52 (1+01:35)    192.168.1.3
+sam-adm  pts/0        Thu Mar 25 08:16 - 08:16  (00:00)     192.168.1.3
+runlevel (to lvl 5)   Thu Mar 25 08:16 - 08:51 (8+00:35)    zero.champlain.edu
+reboot   system boot  Thu Mar 25 08:16 - 08:46 (9+00:29)    zero.champlain.edu
+sam-adm  pts/0        Thu Mar 25 04:58 - 05:27  (00:28)     192.168.1.3
+runlevel (to lvl 5)   Mon Mar 15 17:46 - 08:16 (9+14:29)    zero.champlain.edu
+reboot   system boot  Mon Mar 15 17:46 - 08:46 (18+14:59)   zero.champlain.edu
+shutdown system down  Mon Mar 15 17:45 - 17:46  (00:01)     zero.champlain.edu
+runlevel (to lvl 5)   Mon Mar 15 17:01 - 17:45  (00:44)     zero.champlain.edu
+reboot   system boot  Mon Mar 15 17:01 - 17:45  (00:44)     zero.champlain.edu
+runlevel (to lvl 5)   Sun Feb 21 10:45 - 17:01 (22+05:16)   zero.champlain.edu
+reboot   system boot  Sun Feb 21 10:44 - 17:45 (22+06:00)   zero.champlain.edu
+runlevel (to lvl 5)   Thu Feb 18 08:26 - 10:45 (3+02:18)    zero.champlain.edu
+reboot   system boot  Thu Feb 18 08:25 - 17:45 (25+08:19)   zero.champlain.edu
+shutdown system down  Thu Feb 18 08:15 - 08:25  (00:10)     zero.champlain.edu
+sam-adm  pts/0        Mon Feb  1 05:52 - 09:59  (04:06)     192.168.1.3
+sam-adm  pts/0        Mon Feb  1 05:43 - 05:50  (00:06)     192.168.1.3
+sam-adm  tty1         Mon Feb  1 05:27 - down  (17+02:47)   zero.champlain.edu
+runlevel (to lvl 5)   Mon Feb  1 05:27 - 08:15 (17+02:48)   zero.champlain.edu
+reboot   system boot  Mon Feb  1 05:26 - 08:15 (17+02:48)   zero.champlain.edu
+shutdown system down  Mon Feb  1 05:25 - 05:26  (00:01)     zero.champlain.edu
+sam-adm  pts/0        Sun Jan 31 12:19 - 22:52  (10:33)     192.168.1.3
+sam-adm  pts/0        Sun Jan 31 07:32 - 07:48  (00:15)     192.168.1.3
+sam-adm  tty1         Thu Jan 28 15:24 - down  (3+14:00)    zero.champlain.edu
+sam-adm  tty1         Thu Jan 28 14:25 - 14:26  (00:00)     zero.champlain.edu
+sam-adm  tty1         Thu Jan 28 11:18 - 11:18  (00:00)     zero.champlain.edu
+root     tty1         Thu Jan 28 11:12 - 11:18  (00:05)     zero.champlain.edu
+sam-adm  tty1         Thu Jan 28 11:12 - 11:12  (00:00)     zero.champlain.edu
+runlevel (to lvl 5)   Thu Jan 28 11:12 - 05:25 (3+18:13)    zero.champlain.edu
+reboot   system boot  Thu Jan 28 11:11 - 05:25 (3+18:13)    zero.champlain.edu
+
+wtmp begins Thu Jan 28 11:11:49 2021
+### END last -adx ###
+
+### BEGIN cut -d ':' -f1 /etc/passwd ###
+
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+gnats
+nobody
+_apt
+systemd-timesync
+systemd-network
+systemd-resolve
+messagebus
+sshd
+sam-adm
+systemd-coredump
+Debian-exim
+mysql
+searx
+filtron
+### END cut -d ':' -f1 /etc/passwd ###
+
