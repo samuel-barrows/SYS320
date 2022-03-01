@@ -1,0 +1,40 @@
+#+TITLE: Task 1
+#+AUTHOR:
+
+Samuel Barrows
+SYS320
+03/01/22
+
+* Task 1
+*** What Python Module contains the function to see if a file exists?
+
+    The ~os~ module.
+
+*** What is the function **within the module** that checks to see if the file exists?
+
+    ~path.exists~
+    
+*** What Python module **contains** the function to remove a file?
+
+    The ~os~ module.
+    
+*** What is the function **within the module** that removes the file?
+
+    ~remove~
+    
+*** What standard Python function is used to take **input** from a user prompt?
+
+    ~input~
+
+
+* Reflection
+
+    I enjoyed working with code that is meant to run on remote
+    machines. It's a different perspective that I just haven't worked
+    in before. It's neat to be able to script and program things over
+    ssh. The assignment, as a whole, felt a little all over the place
+    though. I found it clear, but Task 2 seemed slightly unrelated. I
+    understand we will be searching for the IOCs discussed in that
+    section, but it felt weird to set it up now.
+
+    No additional questions for now.
